@@ -6,15 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Discover the CNMI - Home</title>
   <link href="styles.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="home-page">
 
   <header>
     <img src="images/cnmi_logo_header.png" alt="CNMI Logo" class="logo">
-    <h1 class="title-h1">Discover the CNMI</h1>
+    <h1 class="title-p1">Discover the CNMI</h1>
+
     <nav>
-      <a href="index.html">Home</a>|
+      <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>|
       <a href="about.html">About</a>|
       <a href="attractions.html">Attractions</a>|
       <a href="explore_more.html">Explore More</a>|
@@ -22,22 +24,54 @@
     </nav>
   </header>
 
-  <div class="home-main">
-    <main>
-      <section class="intro-home">
-        <div class="intro-top">
-          <h1>The Commonwealth of the Northern Mariana Islands</h1>
-          <p>The Commonwealth of the Northern Mariana Islands, or the CNMI for short, is a U.S. territory located in the
-            western Pacific Ocean. It is made up of 14 islands, with Saipan, Tinian, and Rota being where most of the
-            population resides. Many
-            people have never heard about the CNMI, which
-            is rich in culture, history, and natural attractions. This website aims to help share information about the
-            CNMI and give the islands more recognition and visibility on the web.
-          </p>
+  <div class="home">
+    <h1 class="home-title">The Commonwealth of the Northern Mariana Islands</h1>
+
+    <section class="intro-home">
+      <div class="home-intro-top">
+        <h1>Overview</h1>
+        <p>The Commonwealth of the Northern Mariana Islands, or the CNMI for short, is a U.S. territory located in the
+          western Pacific Ocean. It is made up of 14 islands, with Saipan, Tinian, and Rota being where most of the
+          population resides. Many
+          people have never heard about the CNMI, which
+          is rich in culture, history, and natural attractions. This website aims to help share information about the
+          CNMI and give the islands more exposure and visibility on the web.
+        </p>
+      </br>
+
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="images/saipan-island.png" style="width: 80%" alt="Saipan Island">
+            <div class="text-overlay">Saipan, Northern Mariana Islands</div> 
+          </div>
+
+          <div class="mySlides fade">
+            <img src="images/tinian-island.png" style="width: 80%" alt="Tinian Island">
+            <div class="text-overlay">Tinian, Northern Mariana Islands</div> 
+          </div>
+          <div class="mySlides fade">
+            <img src="images/rota-island.png" style="width: 80%" alt="Rota Island">
+            <div class="text-overlay">Rota, Northern Mariana Islands</div> 
+          </div>
+
         </div>
-        <img src="images/island-chains.jpg" alt="CNMI Island Chain" class="island-chain">
-      </section>
-    </main>
+  
+      </div>
+      <img src="images/island-chains.jpg" alt="CNMI Island Chain" class="island-chain">
+    </section>
+
+
+    <section class="last-para-home">
+      <p>Explore the Commonwealth of the Northern Mariana Islands, a hidden tropical paradise waiting to be discovered.</br>
+      Much of the information about the CNMI online is outdated, scarce, or even nonexistent. This website brings together fresh,
+      reliable details for locals, visitors, and anyone interested in learning more about the islands — all in one
+      place.</p> 
+      <h2 style="color: rgb(56, 95, 133); font-weight: bold;">Explore the website to learn more about the CNMI!</h2>
+    </section>
+
+
+
+    
   </div>
 
   <footer>
@@ -47,6 +81,23 @@
     </div>
   </footer>
 
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 3000);
+    }
+  </script>
 </body>
 
 </html>
