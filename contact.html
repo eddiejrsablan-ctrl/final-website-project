@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Discover the CNMI - Contact</title>
   <link href="styles.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="contact-page">
@@ -23,14 +25,48 @@
   </header>
 
   <div class="contact">
-    <section>
-      
+    <section class="contact_intro">
+      <p>Visiting the Marianas or have any questions? </br>Helpful contact information is provided below.</p>
     </section>
+
+    <section class="MVA">
+      <p class="mva_title">The Marianas Vistitors Authority</p>
+      <p>The MVA is a government organization established to promote tourism in the Northern Mariana Islands. </br>For
+        more information, visit their website or contact:</p>
+      <a href="https://mva.mymarianas.com/">Marianas Visitors Authority</a></br>
+      Call:<a href="tel:16706643200">(670) 664-3200</a></br>
+      Email: <a href="mailto:info@mymarianas.com">info@mymarianas.com</a>
+    </section>
+
+    <p class="form_p">Your feedback on the website would be greatly appreciated</p>
+    <section class="form">
+
+      <form action="https://formsubmit.co/eddie.jr.sablan@my.marianas.edu" method="POST">
+        <fieldset>
+          <legend>Contact Information</legend>
+          <div class="contact_form">
+            <label for="name">Name:</label>
+            <input type="text" name="Name" id="name" required placeholder="first and last name"></br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="Email" id="email" required placeholder="email"></br>
+
+            <label for="message">Feedback:</label>
+            <input type="text" name="Message" id="message" placeholder="feedback"></br>
+            <button type="submit" class="button">Submit</button>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+
+
+
   </div>
 
   <footer>
     <div class="footer-content">
-    <p>&copy;2025 Discover the CNMI &nbsp; | &nbsp; <a href="mailto:eddie.jr.sablan@my.marianas.edu">eddie.jr.sablan@my.marianas.edu</a></p>
+      <p>&copy;2025 Discover the CNMI &nbsp; | &nbsp; <a
+          href="mailto:eddie.jr.sablan@my.marianas.edu">eddie.jr.sablan@my.marianas.edu</a></p>
     </div>
   </footer>
 
